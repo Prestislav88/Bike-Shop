@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+             height: var(--header-height);
+             position: fixed;
+             left: 40%;
+             top: 0;         
+             width: 100%;
+             background-color: transparent;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             padding: 0 var(--header-padding);
+             z-index: 99;
+             transition: height 0.3s ease 0s, background-color 0.3s ease 0s;
+        }
+
+        .container {
+            display: flex;         
+            margin: 40px 80px;
+            /*width: 80%;
+            max-width: 800px;
+            padding-right: 50px; /* Adjust right padding for spacing */
+        }
+
+        .bike-image {
+            flex: 1;
+            padding: 20px;
+            text-align: center; /* Center the image horizontally */
+        }
+
+        .bike-image img {
+            width: 580px; /* Set the width of the image */
+            height: 400px; /* Set the height of the image */
+        }
+
+        .bike-info {
+            flex: 2;
+            padding: 100px;
+            text-align: justify; 
+        }
+
+        .bike-info h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around; /* Align buttons to the left within this section */
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 120px;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #3a3a3a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="Logo.png" alt="Image logo">
+        </a>
+    </header>   
+
+
+    <div class="container">
+        <div class="bike-image">
+            <img src="Cascade_Mount.png" alt="Bike" width="150" height="150">
+        </div>
+        <div class="bike-info">
+            <h1>Mountain Bike</h1>
+            <p>A high-performance mountain bike designed for off-road adventures. This bike features advanced suspension and lightweight frame.</p>
+            <div class="buttons">
+                <a href="#" class="button">Buy</a>
+                <a href="#" class="button">Rent</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
